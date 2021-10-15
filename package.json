@@ -1,5 +1,6 @@
 {
   "name": "file_upload",
+  "homepage": "https://bhaumik-tandan.github.io/File_upload_react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +15,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
+    "gh-pages": "^3.2.3",
     "material-ui": "^1.0.0-beta.47",
     "material-ui-dropzone": "^3.5.0",
     "mongoose": "^6.0.10",
@@ -27,6 +29,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
